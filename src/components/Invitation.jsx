@@ -274,7 +274,7 @@ export default function Invitation() {
 
       {/* Debut Events */}
       <Modal isOpen={showEventsModal} onClose={() => setShowEventsModal(false)} title="Debut Events" size="lg" overlayZ={45} hasBackground={true} backgroundImage="/assets/G12.jpg">
-        <div className="space-y-3 sm:space-y-4">
+        <div className="space-y-3 sm:space-y-4 max-h-[65vh] overflow-y-auto pr-2 sm:pr-4">
           <div className="p-3 sm:p-4 bg-pink-50 rounded-md border-l-4 border-pink-300">
             <h3 className="text-base sm:text-lg font-bold">👗 Dress Code</h3>
             <p className="text-xs sm:text-sm mt-1 sm:mt-2">We'd love for you to join us in semi-formal wear, incorporating the specified color palette. Ladies can choose dresses, skirts, or trousers, while gentlemen are encouraged to wear long-sleeved shirts or polo shirts.</p>
@@ -317,10 +317,10 @@ export default function Invitation() {
             <div className="mt-2 sm:mt-3"><button className="bg-pink-400 hover:bg-pink-500 text-white px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm rounded font-semibold transition-all duration-200 active:scale-95 sm:hover:scale-105" onClick={() => setShowScentsModal(true)}>View Participants</button></div>
           </div>
 
-          <div className="p-4 bg-pink-50 rounded-md border-l-4 border-pink-300">
-            <h3 className="cursor-pointer" onClick={() => { setShowMakeupModal(true) }}>💄 18 MAKEUP</h3>
-            <p>Professional makeup artists and stylists celebrating the debutante.</p>
-            <div className="mt-2"><button className="bg-pink-400 text-white px-3 py-1 rounded" onClick={() => setShowMakeupModal(true)}>View Participants</button></div>
+          <div className="p-3 sm:p-4 bg-pink-50 rounded-md border-l-4 border-pink-300">
+            <h3 className="text-base sm:text-lg font-bold cursor-pointer" onClick={() => { setShowMakeupModal(true) }}>💄 18 MAKEUP</h3>
+            <p className="text-xs sm:text-sm mt-1 sm:mt-2">Professional makeup artists and stylists celebrating the debutante.</p>
+            <div className="mt-2 sm:mt-3"><button className="bg-pink-400 hover:bg-pink-500 text-white px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm rounded font-semibold transition-all duration-200 active:scale-95 sm:hover:scale-105" onClick={() => setShowMakeupModal(true)}>View Participants</button></div>
           </div>
 
 
